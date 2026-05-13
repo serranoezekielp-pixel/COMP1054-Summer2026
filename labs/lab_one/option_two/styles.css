@@ -15,6 +15,7 @@
 
 html,
 body {
+    background: #f2f2f2;
     margin: 0;
     padding: 0;
 }
@@ -63,6 +64,7 @@ header {
 }
 
 .nav {
+    background-color: #f2f2f2 ;
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
@@ -72,6 +74,7 @@ header {
 }
 
 .nav a {
+    color: #4d2cc3;
     padding: .5rem .75rem;
     border-radius: .5rem;
 }
@@ -82,16 +85,27 @@ header {
     place-items: center;
     text-align: center;
     padding: 6rem 1rem 4rem;
+    background-image: url('imgs/meeting.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    max-width: 1200px;
+    max-height: 600px;
+    margin: 2rem auto;
+
 }
 
 .hero h1 {
     font-size: clamp(2.25rem, 4vw + 1rem, 4.25rem);
     margin: 0 0 .5rem;
+    color: #f2f2f2;
+    border-radius: 20px;
 }
 
 .hero p {
     max-width: 62ch;
     margin: 0 auto 1.25rem;
+    color: #f2f2f2;
 }
 
 .btn {
@@ -99,6 +113,7 @@ header {
     padding: .85rem 1.15rem;
     border-radius: .75rem;
     font-weight: 600;
+    color: #5762D5;
 }
 
 .speakers {
@@ -113,10 +128,19 @@ header {
 .card {
     padding: 1rem;
     border-radius: 1rem;
+    background: #fff;
+    background-color: #4d4b58;
 }
 
 .card h3 {
+    color: #f2f2f2;
+    background-color:#4d4b58;
+    padding: .5rem;
     margin-top: 0;
+}
+
+.card p {
+    color: #f2f2f2;
 }
 
 footer {

@@ -85,16 +85,19 @@
      place-items: center;
      text-align: center;
      padding: 6rem 1rem 4rem;
+     background-image: url('imgs/meeting.jpg')
  }
 
  .hero h1 {
      font-size: clamp(2rem, 4vw + 1rem, 4rem);
      margin: 0 0 .5rem;
+     color:#fff
  }
 
  .hero p {
      max-width: 60ch;
      margin: 0 auto 1.25rem;
+     color: #fff;
  }
 
  .btn {
@@ -114,12 +117,17 @@
  }
 
  .card {
+    background:575366;
+    background-color: fff;
      padding: 1rem;
      border-radius: 1rem;
  }
 
  .card h3 {
-     margin-top: 0;
+    background: 575366;
+    background-color: #fff;
+    padding: .5rem;
+    margin-top: 0;
  }
 
  footer {
