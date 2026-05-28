@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial;
+}
+
+/*navbar*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.logo span{
+    color: #6c63ff;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover{
+    color: #6c63ff;
+}
+
+.play-btn{
+    background-color: #6c63ff;
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1.3rem;
+    border-radius: 1.5rem;
+}
+
+.play-btn:hover{
+    background-color: #7d75ff;
+}
+
+/*hero section*/
+
+.hero{
+    text-align: center;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.hero h1{
+    font-size: 4.5rem;
+}
+
+.hero h1 span{
+    color: #8b82ff;
+}
+
+.hero p{
+    color: gray;
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+}
+
+/*buttons*/
+
+.hero-buttons{
+    margin-top: 2.5rem;
+}
+
+.primary-btn{
+    background-color: #6c63ff;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1.7rem;
+    border-radius: 2rem;
+    margin-right: 0.7rem;
+}
+
+.secondary-btn{
+    border: 0.1rem solid gray;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1.7rem;
+    border-radius: 2rem;
+}
+
+/*video box*/
+
+.video-box{
+    width: 43rem;
+    height: 22rem;
+    background-color: #222;
+    margin: auto;
+    margin-top: 4rem;
+
+    border-radius: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.play-icon{
+    font-size: 2.5rem;
+    color: gray;
+}
+
+.video-box h4{
+    color: gray;
+    margin-top: 1rem;
+}
+
+/*footer*/
+
+footer{
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem;
+    color: gray;
+}
