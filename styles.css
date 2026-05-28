@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+.page-wrapper {
+  max-width: 70rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+/*header*/
+.intro {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #38bdf8;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  margin-top: 0.5rem;
+}
+
+/*main content*/
+.main {
+  background: #111827;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+}
+
+/*sections in main*/
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+/*text*/
+p {
+  margin-bottom: 1rem;
+  color: #d1d5db;
+}
+
+/*sidebar*/
+.sidebar {
+  background: #0b1220;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+}
+
+.sidebar h3 {
+  color: #f472b6;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #1f2937;
+}
+
+/*links*/
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f472b6;
+  text-decoration: underline;
+}
+
+/*footer*/
+footer {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #334155;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/*small hover effect */
+.main:hover,
+.sidebar:hover {
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+
+/*for smaller screens*/
+@media (max-width: 48rem) {
+  .page-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
