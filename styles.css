@@ -1,5 +1,6 @@
 /* General Reset & Typography */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   /* 1. Set box-sizing so padding and border are included in element size (1 mark) */
@@ -11,6 +12,7 @@ html {
 
 body {
   /* 2. Use a custom web font (2 marks) */
+  font-family: 'Open Sans', sans-serif;
   color: #222;
   line-height: 1.6;
 }
@@ -18,6 +20,10 @@ body {
 /* Navigation */
 nav {
   /* 3. Make the navbar stick to the top of the page when scrolling (2 marks) */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   background: white;
   display: flex;
   justify-content: space-between;
@@ -38,11 +44,31 @@ nav ul {
 }
 
 /* 4. Style the navigation links (font, spacing, color, hover) (2 marks) */
+nav a {
+  text-decoration: none;
+  color: #005f99;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
 
+nav a:hover {
+  color: #e63946;
+}
 
 /* Hero Section */
 .hero {
   /* 5. Add and center a background image (2 marks) */
+  background-image: url('vscodepic.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
   text-align: center;
   padding: 6rem 2rem;
@@ -51,11 +77,15 @@ nav ul {
 .hero h1 {
   /* 6. Set font size equal to 25px using rem units (1 mark) */
   font-weight: 700;
+  font-size: 2.5rem;
 }
 
 .hero p {
   margin-top: 1rem;
   /* 7. Set font size equal to 20px using rem units (1 mark) */
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 0.5rem 1rem;
 }
 
 /* Section Base */
@@ -70,14 +100,17 @@ section {
   font-size: 3.2rem;
   margin-bottom: 2rem;
   /* 8. Make text uppercase (1 mark) */
+  text-transform: uppercase;
   color: #1f2937;
 }
 
 .card {
   background: #f9f9f9;
-  padding: 2rem;
+  padding: 4rem 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  position: relative;
 }
 
 .badge {
@@ -88,6 +121,9 @@ section {
   border-radius: 999px;
   font-size: 1.2rem;
   font-weight: bold;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
 /* Contact Form */
@@ -109,11 +145,18 @@ section {
 
 .contact-form input,
 .contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: white;
+  font-size: 1.6rem;
   /* 10. Style form inputs and textarea based on mockup (4 marks) */
 }
 
 .contact-form button {
-  background: #e63946;
+  background: #2b2d42;
   color: white;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -122,4 +165,6 @@ section {
   cursor: pointer;
 }
 
-  
+.contact-form button:hover {
+  opacity: 0.9;
+}
