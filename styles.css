@@ -1,0 +1,125 @@
+/* General Reset & Typography */
+* {
+  margin: 0;
+  padding: 0;
+  /* 1. Set box-sizing so padding and border are included in element size (1 mark) */
+}
+
+html {
+  font-size: 62.5%; /* Simplifies rem-based sizing */
+}
+
+body {
+  /* 2. Use a custom web font (2 marks) */
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  /* 3. Make the navbar stick to the top of the page when scrolling (2 marks) */
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+/* 4. Style the navigation links (font, spacing, color, hover) (2 marks) */
+
+
+/* Hero Section */
+.hero {
+  /* 5. Add and center a background image (2 marks) */
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  /* 6. Set font size equal to 25px using rem units (1 mark) */
+  font-weight: 700;
+}
+
+.hero p {
+  margin-top: 1rem;
+  /* 7. Set font size equal to 20px using rem units (1 mark) */
+}
+
+/* Section Base */
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Services */
+#services h2 {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+  /* 8. Make text uppercase (1 mark) */
+  color: #1f2937;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.badge {
+  /* 9. Position the badge over the top-right corner of the card (4 marks) */
+  background: #e63946;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Contact Form */
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #1f2937;
+}
+
+.contact-form {
+  background: #f0f0f0;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  /* 10. Style form inputs and textarea based on mockup (4 marks) */
+}
+
+.contact-form button {
+  background: #e63946;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+  
